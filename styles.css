@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the background dimmer */
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.5s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#balance-amount {
+    font-size: 24px;
+    color: #333;
+}
